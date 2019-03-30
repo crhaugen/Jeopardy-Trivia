@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 app.use(express.static(__dirname))
 app.use(bodyParser.urlencoded({extended: false}))
 
-var dbUrl = 'mongodb+srv://user:babycake@quizinfo-shgpi.mongodb.net/quiz?retryWrites=true'
+var dbUrl = '######add url here #############'
 
 var Question = mongoose.model('info', new mongoose.Schema({}),'info');
 var questionSet;
