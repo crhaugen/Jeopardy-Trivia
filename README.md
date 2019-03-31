@@ -4,15 +4,20 @@ Practice your trivia knowledge with trivia questions that have appeared on Jeopa
 
 Questions were taken from the J! Archive site [(Link)](http://j-archive.com/) and stored in a MongoDB database.
 
-## A random question is displayed:
+##Future updates will include:
+1. Score tracking
+2. Multiplayer
+3. Leaderboard
+
+### A random question is displayed:
 
 ![alt text](https://github.com/crhaugen/Jeopardy-Trivia/blob/demo/demo/start.png)
 
-## Checks answer and displays results:
+### Checks answer and displays results:
 
 ![alt text](https://github.com/crhaugen/Jeopardy-Trivia/blob/demo/demo/typeinQuestion.png)
 
-## Keeps track of all question for the game:
+### Keeps track of all question and whether user got it right for the each game session:
 
 ![alt text](https://github.com/crhaugen/Jeopardy-Trivia/blob/demo/demo/anotherQuestion.png)
 
