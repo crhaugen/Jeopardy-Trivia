@@ -4,10 +4,12 @@ Practice your trivia knowledge with trivia questions that have appeared on Jeopa
 
 Questions were taken from the J! Archive site [(Link)](http://j-archive.com/) and stored in a MongoDB database.
 
-##Future updates will include:
+## Future updates will include:
 1. Score tracking
 2. Multiplayer
 3. Leaderboard
+
+# Example of game in action:
 
 ### A random question is displayed:
 
