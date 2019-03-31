@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 app.use(express.static(__dirname))
 app.use(bodyParser.urlencoded({extended: false}))
 
-var dbUrl = 'mongodb+srv://user:babycake@quizinfo-shgpi.mongodb.net/quiz?retryWrites=true'
+var dbUrl = '######add url here #############'
 
 var Question = mongoose.model('info', new mongoose.Schema({}),'info');
 var questionSet;
@@ -20,7 +20,7 @@ app.get('/info', (req, res)=> {
     Question.aggregate([{ $sample: {size: 1}}], (err, info) => {
       
         console.log(info[0].answer) 
-        console.log(info[0].question)
+        console.log(info[0].question) 
         
         questionSet = info
         res.send(info)  
