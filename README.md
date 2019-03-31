@@ -1,6 +1,6 @@
 # Jeopardy-Trivia
 
-Practice your trivia knowledge with trivia questions that have appeared on Jeopardy.
+Practice your trivia knowledge with trivia questions that have appeared on jeopardy.
 Jeopardy Trivia is an interactive web application using Node.js and Express that allows users to play a simplified version of jeopardy with questions that have appeared on the show. 
 
 Questions were taken from the J! Archive site [(Link)](http://j-archive.com/) and stored in a MongoDB database.
