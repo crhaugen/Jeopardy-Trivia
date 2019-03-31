@@ -25,18 +25,21 @@
 <script>
     var socket = io()
 
+    //this start when page is loaded
     $(()=>{
-        console.log("right bf click")
-
+        
+        //when send button is pressed users answer will be collected and sent to be checked
        $("#send").click(()=>{
            var usersAnswer = { question: $('#name').val(), answer: $('#message').val()}
            postMessage(usersAnswer)
        })
 
+       //when next button is pressed a new question will be loaded
        $("#next").click(()=> {
             getMessage()
        })
 
+       //loading first question
        getMessage()
     })
 
@@ -47,13 +50,15 @@
         $("#question").empty().append(`<h1> ${Question[0].question} </h1>`)
     }
 
-    function addMessage(usersAnswer, rightAnswer, correct)  
+    //adds users answer the correct answer
+    function addMessage(usersAnswer, rightAnswer, correct)   
     {
         $("#messages").prepend(`<h4> Your Answer: ${usersAnswer.answer} </h4> <p> Correct Answer: ${rightAnswer} </p>`)
 
+        //depending on if user was correct one of these will be printed to the screen
         if(correct)
         {
-            $("#messages").prepend(`<h4> Correct! </h4>`)
+            $("#messages").prepend(`<h4> Correct! </h4>`) 
         }
         else  
         {
