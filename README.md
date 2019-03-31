@@ -12,7 +12,7 @@ Questions were taken from the J! Archive site [(Link)](http://j-archive.com/) an
 
 ![alt text](https://github.com/crhaugen/Jeopardy-Trivia/blob/demo/demo/typeinQuestion.png)
 
-## Keeps track of all question for the game 
+## Keeps track of all question for the game:
 
 ![alt text](https://github.com/crhaugen/Jeopardy-Trivia/blob/demo/demo/anotherQuestion.png)
 
