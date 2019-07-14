@@ -10,7 +10,8 @@ app.use(express.static(__dirname))
 app.use(bodyParser.urlencoded({extended: false}))
 
 //Mongodb link won't work if IP address is not whitelisted
-//var dbUrl = '######add url here #############'
+var dbUrl = 'mongodb+srv://user:planet@quizinfo-shgpi.mongodb.net/quiz?retryWrites=true'
+
 
 var Question = mongoose.model('info', new mongoose.Schema({}),'info');
 var questionSet;
@@ -22,7 +23,7 @@ app.get('/info', (req, res)=> {
       
         console.log(info[0].answer) 
         console.log(info[0].question) 
-        
+          
         questionSet = info
         res.send(info)  
     })
@@ -39,6 +40,7 @@ app.post('/info', (req, res)=> {
     userAnswer = userAnswer.answer.toLowerCase(0)   
 
     console.log(userAnswer)
+    console.log(rightAnswer)
      
     var correct = false;
     if(rightAnswer == userAnswer)  
